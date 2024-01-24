@@ -1,6 +1,17 @@
 
 function myCalculator(x, y){
-    let result = x*y;
-     return result;
+    let z = result(x, y);
+    console.log(z);
 }
-console.log(myCalculator(4, 5));
+
+function result(x, y){
+    let val = x + y;
+    return val;
+}
+myCalculator(4, 5);
+
+let a = new Promise(()=>
+{
+
+});
+
