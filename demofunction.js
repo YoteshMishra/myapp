@@ -10,8 +10,10 @@ function result(x, y){
 }
 myCalculator(4, 5);
 
-let a = new Promise(()=>
-{
 
-});
+//  Promise
+// let a = new Promise(()=>
+// {
+
+// });
 
