@@ -1,38 +1,20 @@
-// With Destructring
-const objects = ['table', 'iPhone', 'apple']
-const [furniture, mobile, fruit] = objects
-// console.log(objects);
+let arr = [3, 5, 8, 12, 6, 15]
+// let [a, , b, ...rest] = arr
+// console.log(a, b, rest);
+let {a, b}= {a: 1, b: 5}
+console.log(a, b);
+// const objects = ['table', 'iPhone', 'apple', 'banana', 'pineapple']
+// const [furniture, mobile, ...rest] = objects
+// console.log(furniture, mobile, rest)
 
-// Without Destructuring
-// const furniture = objects[0]
-// const mobile = objects[1]
-// const fruit = objects[2]
 
-// With Destructuring Ex-1
-function Fruit({apple}) {
-    return (
-        <div>
-            This is an {apple}
-        </div>
-    )
+const MyUser = {
+    name: "Yotesh",
+    age: 26,
+    address: "djhdh colony"
 }
+console.log(MyUser.age);
+console.log({ ...MyUser, name:"Ashish", age: 27});
 
-// With Destructuring Ex-2
-
-function Fruit(props) {
-    const {apple, iphone, car} = props
-    return (
-        <div>
-            This is an {apple}
-        </div>
-    )
-}
-
-// Without Destructuring
-function Fruit(props) {
-    return (
-        <div>
-            This is an {props.apple}
-        </div>
-    )
-}
+const {name, myAge, address} = MyUser;
+console.log(name);
